@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    .section-one {
+        display: grid;
+        .nav {
+            padding-inline-start: min(4%, 10em);
+            padding-block: max(1%, 1.5em);
+            box-shadow: 0px 2px 10px rgba(130, 129, 129, 0.5);
+            margin-block-end: 2.2em;
+            width: max(100%, 27em);
+        }
+
+        .banner {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-self: center;
+            width: max(65%, 27em);
+
+            img {
+                object-fit: cover;
+                width: 100%;
+            }
+
+            margin-block-end: min(2em, 5%);
+        }
+
+        .text {
+            padding-inline: min(6%, 10em);
+            display: grid;
+            gap: 0.2em;
+
+            .main {
+                font-size: 2.7em;
+            }
+
+            .paragraph {
+                font-size: 1em;
+                padding-bottom: 1em;
+                color: rgb(34, 34, 34);
+                width: max(5%, 22em);
+                word-spacing: 0.2em;
+            }
+        }
+    }
+
+    .section-two {
+        padding-inline-start: min(6%, 10em);
+        padding-block: min(1em, 10%);
+        display: flex;
+        // grid-template-columns: repeat(auto-fill, minmax(202px, 1fr));
+        //grid-template-columns: repeat(4, 1fr);
+        width: max(100%, 28em);
+        gap: 2.4em;
+
+        overflow-x: scroll;
+        white-space: nowrap;
+
+        &::-webkit-scrollbar {
+            width: 0.2em;
+            height: 0.4em;
+            //border-radius: 20px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: rgb(216, 216, 216);
+            border-radius: 20px;
+        }
+
+        .card {
+            width: max(13em, 100%);
+            display: grid;
+            gap: 0.5em;
+            position: relative;
+
+            .sold {
+                position: absolute;
+                left: 2%;
+                top: 2%;
+                background-color: rgb(216, 216, 216);
+                font-weight: 400;
+                font-size: 0.3em;
+                padding: 4px;
+                border-radius: 4px;
+            }
+
+            .cardImage {
+                width: max(auto, 100%);
+                height: max(235px, 20em);
+            }
+
+            .star-container {
+                display: flex;
+                align-items: center;
+                gap: 0.45em;
+
+                .six,
+                .usa {
+                    font-weight: 200;
+                }
+            }
+
+            .text {
+                font-weight: 300;
+            }
+
+            .price {
+                .from {
+                    font-weight: 600;
+                }
+
+                .person {
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+}

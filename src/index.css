@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+
+.container .section-one {
+  display: grid;
+}
+.container .section-one .nav {
+  padding-inline-start: min(4%, 10em);
+  padding-block: max(1%, 1.5em);
+  box-shadow: 0px 2px 10px rgba(130, 129, 129, 0.5);
+  margin-block-end: 2.2em;
+  width: max(100%, 27em);
+}
+.container .section-one .banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+  width: max(65%, 27em);
+  margin-block-end: min(2em, 5%);
+}
+.container .section-one .banner img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+.container .section-one .text {
+  padding-inline: min(6%, 10em);
+  display: grid;
+  gap: 0.2em;
+}
+.container .section-one .text .main {
+  font-size: 2.7em;
+}
+.container .section-one .text .paragraph {
+  font-size: 1em;
+  padding-bottom: 1em;
+  color: rgb(34, 34, 34);
+  width: max(5%, 22em);
+  word-spacing: 0.2em;
+}
+.container .section-two {
+  padding-inline-start: min(6%, 10em);
+  padding-block: min(1em, 10%);
+  display: flex;
+  width: max(100%, 28em);
+  gap: 2.4em;
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+.container .section-two::-webkit-scrollbar {
+  width: 0.2em;
+  height: 0.4em;
+}
+.container .section-two::-webkit-scrollbar-thumb {
+  background-color: rgb(216, 216, 216);
+  border-radius: 20px;
+}
+.container .section-two .card {
+  width: max(13em, 100%);
+  display: grid;
+  gap: 0.5em;
+  position: relative;
+}
+.container .section-two .card .sold {
+  position: absolute;
+  left: 2%;
+  top: 2%;
+  background-color: rgb(216, 216, 216);
+  font-weight: 400;
+  font-size: 0.3em;
+  padding: 4px;
+  border-radius: 4px;
+}
+.container .section-two .card .cardImage {
+  width: max(auto, 100%);
+  height: max(235px, 20em);
+}
+.container .section-two .card .star-container {
+  display: flex;
+  align-items: center;
+  gap: 0.45em;
+}
+.container .section-two .card .star-container .six,
+.container .section-two .card .star-container .usa {
+  font-weight: 200;
+}
+.container .section-two .card .text {
+  font-weight: 300;
+}
+.container .section-two .card .price .from {
+  font-weight: 600;
+}
+.container .section-two .card .price .person {
+  font-weight: 300;
+}/*# sourceMappingURL=index.css.map */
